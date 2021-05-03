@@ -1,0 +1,9 @@
+This installation guide differs from the original one due to the customization of some items. This manual is intended for Windows OS.  
+1. You should install Python on your local machine ([https://www.python.org/downloads/]). Code was written on Python2, but I compiled it using Python3.  
+2. Check where is your home directory (run in unix terminal python -c "import os; print(os.getenv('HOME'))"). I recommend that you use GitBash.  
+3. Go to home directory and clone repository https://github.com/jon-jacky/PyModel.git .  
+4. Go to directory Pymodel and run : python setup.py , then go on bin folder and run pymodel_paths_mydocs.bat.
+5. Any additional python libs aren't required so I skipped file requirements.txt.
+6. To test some cases go to directory samples/Stack(for example) and run tpath.bat. You should run that cmd in every new sample.
+7.
+
