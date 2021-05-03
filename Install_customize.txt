@@ -5,5 +5,6 @@ This installation guide differs from the original one due to the customization o
 4. Go to directory Pymodel and run : python setup.py , then go on bin folder and run pymodel_paths_mydocs.bat.
 5. Any additional python libs aren't required so I skipped file requirements.txt.
 6. To test some cases go to directory samples/Stack(for example) and run tpath.bat. You should run that cmd in every new sample.
-7.
+7. Due to some incompatibility between python 3 and python 2, I corrected some scripts in my directory(in particular,  I replaced print 'smth' with print('smth')). So because of conflicts I deleted directory tests from Python lib directory   (C:\Users\vika\AppData\Local\Programs\Python\Python36\Lib) and move test cases from sample directories on that.
+8. To test run trun [test_cases]
 
