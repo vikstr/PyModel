@@ -30,7 +30,7 @@ def command(cmd):
     print cmd # DEBUG
     status = os.system(cmd)
     if status:
-        print 'Failed: %s' % cmd  # status 0 means success
+        print ('Failed: %s' % cmd)  # status 0 means success
 
 def main():
     (options, args) = ViewerOptions.parse_args()

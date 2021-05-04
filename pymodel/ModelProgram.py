@@ -104,7 +104,7 @@ class ModelProgram(Model):
     try:
       self.module.Reset()
     except AttributeError: # Reset is optional, but there is no default
-      print 'No Reset function for model program %s' % self.module.__name__
+      print ('No Reset function for model program %s' % self.module.__name__)
       sys.exit()       
 
   def ActionEnabled(self, a, args):
@@ -120,8 +120,8 @@ class ModelProgram(Model):
       nargs = len(args)
       # nparams == 0 means match any args
       if nparams > 0 and nparams != nargs:
-        print 'Error: %s needs %s arguments, got %s.  Check parameter generator.' %\
-            (a_enabled.__name__, nparams, nargs)
+        print ('Error: %s needs %s arguments, got %s.  Check parameter generator.' %\
+            (a_enabled.__name__, nparams, nargs))
         sys.exit(1) # Don't return, just exit with error status
       else:
         if nparams > 0:

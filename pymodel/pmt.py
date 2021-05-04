@@ -160,11 +160,11 @@ def RunTest(options, mp, stepper, strategy, f, krun):
   if stepper and not mp.Accepting() and not failMessage:
       failMessage = infoMessage # test run ends in non-accepting state: fail
   if failMessage:
-    print '%3d. Failure at step %s, %s' % (krun, isteps, failMessage)
+    print ('%3d. Failure at step %s, %s' % (krun, isteps, failMessage))
   else:
-    print '%3d. %s at step %s%s' % (krun, 'Success' if stepper else 'Finished',
+    print ('%3d. %s at step %s%s' % (krun, 'Success' if stepper else 'Finished',
                                    isteps, 
-                                   (', %s' % infoMessage) if infoMessage else '')
+                                   (', %s' % infoMessage) if infoMessage else ''))
   if options.output:
     f.write('  ],\n')
 
@@ -231,7 +231,7 @@ def main():
     RunTest(options, mp, stepper, strategy, f, k)
     k += 1     
   if k > 1:
-    print 'Test finished, completed %s runs' % k
+    print ('Test finished, completed %s runs' % k)
 
   if options.output:
     f.write(']')
